@@ -154,7 +154,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-DISABLE_COLLECTSTATIC = 1
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
