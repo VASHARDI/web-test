@@ -1,2 +1,1 @@
-web: gunicorn .wsgi:application --log-file - --log-level debug
-manage.py migrate
+web: pipenv run python scr/manage.py runserver 0.0.0.0:$PORT
