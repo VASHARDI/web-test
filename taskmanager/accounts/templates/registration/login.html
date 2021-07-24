@@ -1,0 +1,28 @@
+{% extends  'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block main %}
+<style> body { background: url(https://sun9-6.userapi.com/impg/3juLGiLoTQe_WSVlw11Nf_6oFoqe77n15SxXeQ/E8_D-LXxdFs.jpg?size=1920x1080&quality=96&sign=f0839bc97d8766ba0caf01bad39aed97&type=album); }
+.q {
+margin-top:100px;
+}
+</style>
+<div class="q">
+<div class="card">
+<div class="card-body">
+<h4 class="card-title">Вход с помощью логина и пароля</h4>
+
+
+<form method="post">
+{% csrf_token %}
+<input type="hidden" name="next" value="{{ next }}">
+
+{{ form|crispy }}
+
+<button type="submit" class="btn btn-primary btn-block">Вход</button>
+</form>
+</div>
+</div>
+</div>
+{% endblock %}

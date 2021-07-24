@@ -1,0 +1,33 @@
+{% extends 'main/base_shablon.html' %}
+
+{% block title %}
+Расписание звонков
+{% endblock %}
+
+{% block test %}
+Звонки
+{% endblock %}
+
+{% block content %}
+
+{% for el in tasks %}
+<style>
+ .white-space-pre-line {
+  white-space: pre-line;
+}
+
+
+</style>
+<div id="article" style="float: left; width: 50%; padding: 30px">
+
+    <div class="alert alert-warning mt-2">
+        <div class="white-space-pre-line">
+            <h3>{{ el.title }}</h3>
+            <p>{{ el.task }}</p>
+
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}
