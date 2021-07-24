@@ -1,1 +1,1 @@
-web: pipenv run python scr/manage.py runserver 0.0.0.0:$PORT
+web: gunicorn --bind 0.0.0.0:$PORT 
