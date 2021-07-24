@@ -1,0 +1,132 @@
+<html>
+<title>Авторизация</title>
+<head>
+  <style> body { background: url(https://sun9-6.userapi.com/impg/3juLGiLoTQe_WSVlw11Nf_6oFoqe77n15SxXeQ/E8_D-LXxdFs.jpg?size=1920x1080&quality=96&sign=f0839bc97d8766ba0caf01bad39aed97&type=album); }
+</style>
+<style>
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 2px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 10%;
+}
+.imgcontainer {
+    text-align: center;
+    margin: 150px 0 8px 0;
+}
+
+.circle {
+    width: 500px;
+    height: 500px;
+
+    border-radius: 150px;
+}
+
+img.avatar {
+    width: 10%;
+    border-radius: 10%;
+}
+
+</style>
+  <style>
+    body {
+    font-family: sans-serif;
+    background-color: #81d4fa;
+    font-weight: bold;
+
+}
+
+.text-box {
+   margin-left: 46.4vw;
+   margin-top: 7vh;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+</style>
+</head>
+<body>
+<form action="/main">
+  <div class="imgcontainer">
+    <img src="https://wmpics.pics/di-YQLE.png" alt="" class="circle">
+  </div>
+  <div class="text-box">
+    <a href="/accounts/login/" class="btn btn-white btn-animate">AUTH</a>
+</div>
+    </p>
+</form>
+{% for el in tasks %}
+<span style="padding: 0px; margin: 0px; font-size: 15px; position: absolute; color: rgba(142, 138, 138, 0.75);  bottom: 3px;">version {{el.title}}</span>
+{% endfor %}
+</body>
+</html>
+
