@@ -1,0 +1,75 @@
+{% extends 'main/base_shablon.html' %}
+
+{% block title %}
+жизнь класса
+{% endblock %}
+
+{% block test %}
+Жизнь класса
+{% endblock %}
+
+{% block content %}
+<style>
+/* Create four equal columns that sits next to each other */
+.column {
+
+
+    max-width: 20%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+</style>
+<body>
+{% for el in tasks %}
+<h4 class="Container">
+        {{el.title}}
+      </h4>
+
+
+<div class="row">
+  <div class="column">
+    <img src="{{el.task0}}" style="width:100%">
+    <img src="{{el.task1}}" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="{{el.task2}}" style="width:100%">
+    <img src="{{el.task3}}" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="{{el.task4}}" style="width:100%">
+    <img src="{{el.task5}}" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="{{el.task6}}" style="width:100%">
+    <img src="{{el.task7}}" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="{{el.task8}}" style="width:100%">
+    <img src="{{el.task9}}" style="width:100%">
+  </div>
+
+{% endfor %}
+
+{% endblock %}

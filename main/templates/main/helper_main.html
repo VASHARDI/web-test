@@ -1,0 +1,184 @@
+<html>
+<title>HELPER</title>
+<head>
+  <style> body { background: url(https://sun9-6.userapi.com/impg/3juLGiLoTQe_WSVlw11Nf_6oFoqe77n15SxXeQ/E8_D-LXxdFs.jpg?size=1920x1080&quality=96&sign=f0839bc97d8766ba0caf01bad39aed97&type=album); }
+
+    body {
+}
+
+.text-box {
+   margin-left: 44.39vw;
+   margin-top: 7vh;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+
+</style>
+    <style>
+
+
+.container {
+  width: 120px;
+  height: 4px;
+  margin: 0 auto;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+path {
+  stroke-dasharray: 99.47578430175781;
+  stroke-dashoffset: -99.47578430175781;
+  fill: transparent;
+}
+
+svg.animate path {
+  animation: 1.7s ease forwards draw;
+  opacity:1;
+}
+
+@keyframes draw {
+  0% {
+    opacity: 1;
+    stroke-dashoffset: -99.47578430175781;
+    fill: transparent;
+    transform: translateY(0);
+  }
+
+  35% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+
+  60% {
+    fill: #3da35a;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    fill: #3da35a;
+    stroke-dashoffset: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+
+button {
+  cursor: pointer;
+  min-width: 200px;
+  padding: 15px 5px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  background: #3da35a;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(56,100,38);
+  transition: all 1s;
+}
+
+button:hover {
+  box-shadow: 0 0 25px rgb(56,100,38);
+}
+
+button:focus {
+  outline: none;
+}
+ .center {
+   position: relative;
+left: 50%;
+transform: translate(-50%, 0);
+ }
+
+    </style>
+<div class="container">
+  <svg viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+    <path d="M 18 32.34 l -8.34 -8.34 -2.83 2.83 11.17 11.17 24 -24 -2.83 -2.83 z" stroke="#3da35a" fill="transparent"/>
+  </svg>
+</div>
+<a href="/main" target="_blank">
+<button>Вернуться на главную</button>
+    </a>
+    <div class="center">
+<div class="text-box">
+    <a href="/mathematics" class="btn btn-white btn-animate">_Математика</a>
+</div>
+    </div>
+    <style>
+        .pd0 {
+        padding-top:50px
+        }
+    </style>
+    <div class="pd0">
+    <div class="text-box">
+    <a href="/russian" class="btn btn-white btn-animate">Русский язык</a>
+</div>
+    </div>
+    <style>
+        .pd1 {
+        padding-top:50px
+        }
+
+    </style>
+    <div class="pd1">
+    <div class="text-box">
+    <a href="/physics" class="btn btn-white btn-animate">___.Физика.___</a>
+</div>
+    </div>
