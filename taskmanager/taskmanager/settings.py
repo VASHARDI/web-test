@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'main',
     'crispy_forms',
     'accounts',
+    'django-heroku',
 
 ]
 
